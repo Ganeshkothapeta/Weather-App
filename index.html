@@ -1,0 +1,75 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <!-- Link to external CSS for styling -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Link to Boxicons for weather icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <!-- Search box for entering city or location -->
+        <div class="search-box">
+            <i class='bx bxs-map'></i> <!-- Map icon -->
+            <input type="text" placeholder="Enter your location">
+            <button class="bx bx-search"></button> <!-- Search icon -->
+        </div>
+
+        <!-- Weather box showing current weather -->
+        <div class="weather-box">
+            <div class="box">
+                <div class="info-weather">
+                    <div class="weather">
+                        <img src="https://cdn2.iconfinder.com/data/icons/weather-flat-14/64/weather02-1024.png" alt="Weather Icon">
+                        <p class="temperature">0 <span>°C</span></p>
+                        <p class="description">Description</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Weather details like humidity and wind speed -->
+        <div class="weather-details">
+            <div class="humidity">
+                <i class='bx bx-water'></i> <!-- Water droplet icon -->
+                <div class="text">
+                    <div class="info-humidity">
+                        <span>0%</span>
+                    </div>
+                    <p>Humidity</p>
+                </div>
+            </div>
+
+            <div class="wind">
+                <i class='bx bx-wind'></i> <!-- Wind icon -->
+                <div class="text">
+                    <div class="info-wind">
+                        <span>0 km/h</span>
+                    </div>
+                    <p>Wind Speed</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Error message for location not found -->
+        <div class="not-found">
+            <div class="box">
+                <img src="https://cdn.vectorstock.com/i/preview-1x/19/51/page-not-found-error-404-template-vector-14121951.jpg" alt="404 Not Found">
+                <p>Oops! Location not found!</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Link to external JavaScript for functionality -->
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
